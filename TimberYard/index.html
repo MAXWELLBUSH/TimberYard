@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timber Yard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+<body>
+  
+<header class="header">
+  <!--image -->
+<div><img src="logo.png" alt="logo" class="logo" height="100px" width="100px"></div>
+<!--Links -->
+   <nav class="navbar">
+<a href="#home">Home</a>
+<a href="#products">Products</a>
+<a href="#about">About</a>
+<a href="#pricing">Pricing</a>
+<a href="#contact">Contact Us</a>
+
+</nav>
+</header>
+
+<!--home section -->
+<section id="home">
+<div>
+    <h1>Welcome to Miti Timberyard</h1>
+    <p>Your trusted partner for premium timber products.</p>
+    <div class="buttons">
+        <a href="#about" class="btnlearn">Learn More</a>
+        <a href="#contact" class="btncontact">Contact us</a>
+        </div>
+</div>
+</section>
+<!--product section -->
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="product-item">
+      <!--images -->
+      <img src="pics/hardwood.png" loading="lazy" alt="Hardwood" height="450px">
+      <div class="textcontent">
+      <h3>Hardwood Trees</h3>
+      <p>Durable and high-quality hardwood for all purposes.Denser, more durable, and slower to grow. Hardwoods are typically more expensive. Ideal for fine furniture, flooring, cabinetry, and high-quality wood products.</p>
+      </div>
+    </div>
+    <div class="product-item">
+      <img src="pics/softwood.png" loading="lazy" alt="Softwood" height="250px">
+      <div class="textcontent">
+      <h3>Softwood Trees</h3>
+      <p>Lightweight and versatile softwood for construction.Commonly used in construction, furniture making, paper, and packaging materials.</p>
+    </div>
+    </div>
+    <div class="product-item">
+        <img src="pics/enginnered.png" loading="lazy" alt="Enginered wood" height="250px">
+        <div class="textcontent">
+        <h3>Enginered Wood Sources</h3>
+         <p>Man-made from layers or fibers of wood glued together with adhesives.Offers strength, stability, and uniformity, often used in construction. It can be designed to be more sustainable and cost-effective.</p>
+        </div>
+      </div>
+    </section>
+
+    <!--about section -->
+    <section id="about">
+      <h2>About Us</h2>
+        <div class="aboutcontainer">
+           <div class="aboutdetails">
+        <p>Established in 1920, Miti Timberyard has been providing top-quality timber products to customers for over 50 years. Our mission is to deliver reliable, sustainable timber solutions for all your needs.</p>
+        <p>We take pride in offering a wide range of timber products and exceptional customer service.</p>
+        <h3>Our Core Values</h3>
+          <!--Listing -->
+        <ul>
+          <li><strong>Quality:</strong> Providing only the finest timber products.</li>
+          <li><strong>Sustainability:</strong> Promoting eco-friendly practices and responsible sourcing.</li>
+          <li><strong>Customer Satisfaction:</strong> Ensuring a seamless experience from order to delivery.</li>
+        </ul>
+        <h3>Our Facility</h3>
+        <p>Located in the heart of <strong>Eastleigh, Nairobi</strong>, our state-of-the-art facility is equipped to handle a variety of timber processing and storage needs. We take pride in maintaining a clean, organized, and efficient yard.</p>
+            </div>
+        <div class="aboutmap">
+            <!--iframe -->
+        <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127362.55515097473!2d36.70730833832716!3d-1.2863892543798962!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f172f8ba093e5%3A0xe7342319f7591b1a!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1673443802340!5m2!1sen!2sus" 
+        width="300" 
+        height="460" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    </div>
+</section>
+
+<!-- pricing section-->
+<section id="pricing">
+  <h2>Pricing</h2>
+    <!--table -->
+  <table>
+    <tr>
+      <th>Product</th>
+      <th>Type</th>
+      <th>Price</th>
+      <th>Stock</th>
+    </tr>
+    <tr>
+      <td>Oak Wood</td>
+      <td>Hardwood</td>
+      <td>$20</td>
+      <td>In Stock</td>
+    </tr>
+    <tr>
+      <td>Pine Wood</td>
+      <td>Softwood</td>
+      <td>$15</td>
+      <td>Out of Stock</td>
+    </tr>
+    <tr>
+      <td>Mahogany</td>
+      <td>Hardwood</td>
+      <td>$30</td>
+      <td>Limited Stock</td>
+    </tr>
+    <tr>
+      <td>Bamboo</td>
+      <td>Grass</td>
+      <td>$10</td>
+      <td>In Stock</td>
+    </tr>
+  </table>
+  
+
+</section>
+    <!--contact section -->
+      <section id="contact">
+        <h2>Contact us</h2>
+        <form>
+            <input placeholder="Please enter your name" id="name"><br>
+            <span class="warning" id="namewarning" style="color:red; display:none;">Name required! 😞</span>
+    
+            <input placeholder="Please enter your email" id="email"><br>
+            <span class="warning" id="emailwarning" style="color:red; display:none;">Valid email required! 😞</span>
+    
+            <textarea name="message" rows="4"cols="50" id="textarea" placeholder="Your message"></textarea><br>
+            <span class="warning"id="messagewarning" style="color:red; display:none;">message is required! 😞</span><br>
+    
+            <button type="button" id="submitbtn">Submit</button>
+        </form>
+        <div class="icons">
+        <i class="fa-solid fa-phone"> </i>
+        <span class="info">0708267650</span>
+    
+        <i class="fa-solid fa-envelope"></i>
+        <span class="info">mahezmax@gmail.com</span>
+    
+        <i class="fa-solid fa-location-dot"></i>
+        <span class="info">123 Main St, City</span>
+    </div>
+    <footer>
+        <p>&copy; <script>
+          
+
+        </script> <span id="myYear">  year</span> Double i. All rights reserved.</p><br><br>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-linkedin"></i>
+        <i class="fa-brands fa-facebook"></i>
+        
+    </footer>
+    
+      
+  
+ <script src="index.js"></script>
+</body>
+</html>
